@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/rating")
 public class RatingController {
-
     @GetMapping("/get")
     public String get(){
         return "Rating Controller Hit!!!";
