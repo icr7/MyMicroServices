@@ -12,4 +12,9 @@ public class EmployeeController {
     public String get(){
         return "Employee Controller hit!!";
     }
+
+    @GetMapping("/get2")
+    public String get2(){
+        return "Employee Controller hit!! get2 ";
+    }
 }

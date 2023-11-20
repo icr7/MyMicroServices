@@ -1,0 +1,28 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: employee
+          uri: lb://EMPLOYEE-APP
+          predicates:
+            - Path=/employee/**
+
+        - id: rating
+          uri: lb://RATING-APP
+          predicates:
+            - Path=/rating/**
+
+        - id: employee
+          uri: lb://SALARY-APP
+          predicates:
+            - Path=/salary/**
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
