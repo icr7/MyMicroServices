@@ -1,5 +1,6 @@
 package com.MyMicroservice.RatingService.Contoller;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +15,14 @@ public class RatingController {
     RestTemplate restTemplate;
 
     @GetMapping("/get")
+    @CircuitBreaker(name="ratingCircuitBreaker", fallbackMethod = "getRatingFallback")
     public String get(){
         String employeeDetailResponse = restTemplate.getForObject(EMPLOYEE_URL,String.class);
         return "Rating Controller Hit!!! and employeeDetailResponse is : "+employeeDetailResponse;
     }
+
+    public String getRatingFallback(Throwable throwable){
+        return "rating server unable to fetch employee data as : employee server is currenty down please try after sometime!!!";
+    }
+
 }
