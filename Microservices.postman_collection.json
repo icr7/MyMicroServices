@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "1b113123-dd08-4c06-aace-179e6c1ebf91",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27534067"
+	},
+	"item": [
+		{
+			"name": "EmployeeGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/employee/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RatingGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/rating/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"rating",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalaryGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/salary/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"salary",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

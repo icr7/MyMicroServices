@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "0ffe5d8d-8fdc-44b1-b846-50db202d4da7",
+		"name": "API-GATEWAY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27534067"
+	},
+	"item": [
+		{
+			"name": "employee get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/employee/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee get2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/employee/get2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"employee",
+						"get2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rating get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/rating/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"rating",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salary get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/salary/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"salary",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
